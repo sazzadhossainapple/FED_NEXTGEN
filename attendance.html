@@ -141,8 +141,11 @@
 
               <!-- drop down menu -->
               <li class="nav-item mb-3">
-                <div class="hover-nav" onclick="toggleMenu()">
-                  <div class="d-flex align-items-center g-2 ms-4">
+                <div class="hover-nav">
+                  <div
+                    class="d-flex align-items-center g-2 ms-4"
+                    onclick="toggleMenu()"
+                  >
                     <img src="./asserts/dropDownArrows.png" alt="" />
                     <div
                       class="nav-link text-white fw-medium nav-text d-flex align-items-center"
@@ -157,7 +160,7 @@
                   </div>
                 </div>
 
-                <ul class="dropdown-menu-text">
+                <ul id="subMenu" class="dropdown-menu-text">
                   <li class="text-white mb-3 mt-3">
                     <a class="text-white text-decoration-none" href="#"
                       >Approval</a
@@ -197,8 +200,8 @@
       <!-- mobile and tablet end -->
 
       <!-- desktop device start -->
-      <aside class="bg-color h-100 d-lg-block d-none">
-        <h1 class="text-white text-center fs-3 fw-bold py-5">
+      <aside class="bg-color d-lg-block d-none">
+        <h1 class="text-white text-center fs-3 fw-bold pt-4 pb-5">
           Place A Logo Here
         </h1>
         <ul class="nav flex-column">
@@ -275,8 +278,11 @@
 
           <!-- drop down menu -->
           <li class="nav-item mb-3">
-            <div class="hover-nav" onclick="toggleMenu()">
-              <div class="d-flex align-items-center g-2 ms-4">
+            <div class="hover-nav">
+              <div
+                class="d-flex align-items-center g-2 ms-4"
+                onclick="toggleMenu()"
+              >
                 <img src="./asserts/dropDownArrows.png" alt="" />
                 <div
                   class="nav-link text-white fw-medium nav-text d-flex align-items-center"
@@ -291,7 +297,7 @@
               </div>
             </div>
 
-            <ul class="dropdown-menu-text">
+            <ul id="subMenu" class="dropdown-menu-text">
               <li class="text-white mb-3 mt-3">
                 <a class="text-white text-decoration-none" href="#">Approval</a>
               </li>
@@ -322,265 +328,11 @@
       </aside>
       <!-- desktop end -->
     </header>
-
-    <!-- main content part -->
-    <main class="w-75 main-body">
+    <main>
+      <!-- main content part -->
       <section>
-        <!-- header start -->
-        <div
-          class="bg-white py-2 pe-5 ps-5 d-flex justify-content-between align-items-center"
-        >
-          <div class="ms-5 d-flex align-items-center position-relative">
-            <div>
-              <input
-                type="text"
-                class="search-field py-2 ps-5 pe-4"
-                name=""
-                id=""
-                placeholder="SEARCH"
-              />
-            </div>
-
-            <div class="position-absolute search-btn">
-              <img src="./asserts/search.png" alt="" />
-            </div>
-          </div>
-          <div>
-            <div class="d-flex align-items-center">
-              <div class="me-5">
-                <img src="./asserts/calender.png" alt="" />
-              </div>
-              <div class="me-5 position-relative">
-                <img src="./asserts/notification.png" alt="" />
-                <span class="dot"></span>
-              </div>
-              <div class="ms-2">
-                <img class="avatar" src="./asserts/top-profile.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- header end -->
-
-        <!-- company status start -->
-        <div class="px-5">
-          <div>
-            <h2 class="text-title-color fs-1 ms-2">Dashboard</h2>
-            <p class="fw-bold company-status text-black mb-4">Company Status</p>
-          </div>
-
-          <div class="company-card">
-            <!-- card-1 -->
-            <div class="company-card-item bg-white px-3 py-4 rounded-3">
-              <div>
-                <img src="./asserts/people.png" alt="" />
-                <span class="total-emloyee">Total Employee</span>
-              </div>
-              <div class="my-4 d-flex justify-content-between">
-                <h2 class="fw-bold fs-2 text-black">450</h2>
-                <div>
-                  <button class="btn btn-view bg-color text-white py-2 px-4">
-                    View All
-                  </button>
-                </div>
-              </div>
-              <hr />
-              <div class="mt-4 mb-2">
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-1.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-2.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-3.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-4.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-5.png"
-                  alt=""
-                />
-                <img class="people-avatar" src="./asserts/plus.png" alt="" />
-              </div>
-            </div>
-            <!-- card-2 -->
-            <div class="company-card-item bg-white px-3 py-4 rounded-3">
-              <div>
-                <img src="./asserts/people.png" alt="" />
-                <span class="total-emloyee">Attend Today</span>
-              </div>
-              <div class="my-4 d-flex justify-content-between">
-                <h2 class="fw-bold fs-2 text-black">420</h2>
-                <div>
-                  <button class="btn btn-view bg-color text-white py-2 px-4">
-                    View All
-                  </button>
-                </div>
-              </div>
-              <hr />
-              <div class="mt-4 mb-2">
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-1.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-2.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-3.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-4.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-5.png"
-                  alt=""
-                />
-                <img class="people-avatar" src="./asserts/plus.png" alt="" />
-              </div>
-            </div>
-            <!-- card-3 -->
-            <div class="company-card-item bg-white px-3 py-4 rounded-3">
-              <div>
-                <img src="./asserts/people.png" alt="" />
-                <span class="total-emloyee">Employees on Leave</span>
-              </div>
-              <div class="my-4 d-flex justify-content-between">
-                <h2 class="fw-bold fs-2 text-black">15</h2>
-                <div>
-                  <button class="btn btn-view bg-color text-white py-2 px-4">
-                    View All
-                  </button>
-                </div>
-              </div>
-              <hr />
-              <div class="mt-4 mb-2">
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-1.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-2.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-3.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-4.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-5.png"
-                  alt=""
-                />
-                <img class="people-avatar" src="./asserts/plus.png" alt="" />
-              </div>
-            </div>
-            <!-- card-4 -->
-            <div class="company-card-item bg-white px-3 py-4 rounded-3">
-              <div>
-                <img src="./asserts/people.png" alt="" />
-                <span class="total-emloyee">New Expense Request</span>
-              </div>
-              <div class="my-4 d-flex justify-content-between">
-                <h2 class="fw-bold fs-2 text-black">5</h2>
-                <div>
-                  <button class="btn btn-view bg-color text-white py-2 px-4">
-                    View All
-                  </button>
-                </div>
-              </div>
-              <hr />
-              <div class="mt-4 mb-2">
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-1.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-2.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-3.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-4.png"
-                  alt=""
-                />
-                <img
-                  class="people-avatar"
-                  src="./asserts/groupPeople-5.png"
-                  alt=""
-                />
-                <img class="people-avatar" src="./asserts/plus.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
+        <h1>hello</h1>
       </section>
-      <!-- company status end-->
-
-      <!-- Expense Report start -->
-      <section class="px-5 expense-container d-flex gap-5">
-        <div>
-          <p class="fw-bold company-status text-black mb-4">Expense Report</p>
-          <div class="bg-white p-4 rounded-4">
-            <div>
-              <div class="d-flex gap-5 align-items-center">
-                <div class="d-flex align-items-center gap-4 mt-3">
-                  <p class="date text-black">Day</p>
-                  <p class="date">Week</p>
-                  <p class="date">Month</p>
-                  <p class="date">Year</p>
-                </div>
-                <div class="btn-export-content">
-                  <button class="btn btn-export bg-color text-white py-2 px-4">
-                    Export Details
-                  </button>
-                </div>
-              </div>
-              <div class="my-4">
-                <h1 class="text-black fw-bold fs-1">৳45,000</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <p class="fw-bold company-status text-black mb-4">Task Summary</p>
-        </div>
-      </section>
-      <!-- Expense Report end -->
     </main>
     <footer></footer>
     <!-- bootstrap js link -->
@@ -589,7 +341,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <!-- custom js link -->
     <script src="./JS/javaScript.js"></script>
   </body>
 </html>
