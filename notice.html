@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>FED NEXTGEN</title>
+  </head>
+  <body class="d-flex bg-primary-color">
+    <!-- header part  -->
+    <header class="header">
+      <!-- mobile and tablet start -->
+      <div
+        class="offcanvas offcanvas-start text-white bg-color d-sm-block d-lg-none"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        tabindex="-1"
+        id="offcanvasScrolling"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">
+            FED-NEXTGEN
+          </h5>
+          <button
+            type="button"
+            class="btn-close bg-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body bg-color">
+          <aside class="h-100">
+            <h1 class="text-white text-center fs-3 fw-bold py-5">
+              FED NEXTGEN
+            </h1>
+            <ul class="nav flex-column">
+              <li class="nav-item hover-nav mb-3">
+                <a
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+                  aria-current="page"
+                  href="index.html"
+                >
+                  <img class="me-3" src="./asserts/Vector.png" alt="" />
+                  Dashbord
+                </a>
+              </li>
+              <li class="nav-item hover-nav mb-3">
+                <a
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+                  aria-current="page"
+                  href="attendance.html"
+                >
+                  <img class="me-3" src="./asserts/Vector.png" alt="" />
+                  Attendance
+                </a>
+              </li>
+              <li class="nav-item hover-nav mb-3">
+                <a
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+                  aria-current="page"
+                  href="Employees.html"
+                >
+                  <img class="me-3" src="./asserts/Vector.png" alt="" />
+                  Employees
+                </a>
+              </li>
+              <li class="nav-item hover-nav mb-3">
+                <a
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+                  aria-current="page"
+                  href="leaves.html"
+                >
+                  <img class="me-3" src="./asserts/Vector.png" alt="" />
+                  Leaves
+                </a>
+              </li>
+              <li class="nav-item hover-nav mb-3">
+                <a
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+                  aria-current="page"
+                  href="expense.html"
+                >
+                  <img class="me-3" src="./asserts/Vector.png" alt="" />
+                  Expense
+                </a>
+              </li>
+              <li class="nav-item hover-nav mb-3">
+                <a
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+                  aria-current="page"
+                  href="notice.html"
+                >
+                  <img class="me-3" src="./asserts/Vector.png" alt="" />
+                  Notice
+                </a>
+              </li>
+              <li class="nav-item hover-nav mb-3">
+                <a
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+                  aria-current="page"
+                  href="departments.html"
+                >
+                  <img class="me-3" src="./asserts/Vector.png" alt="" />
+                  Departments
+                </a>
+              </li>
+
+              <!-- drop down menu -->
+              <li class="nav-item position-relative mb-3">
+                <div class="hover-nav" onclick="toggleMenu()">
+                  <div class="d-flex align-items-center g-2 ms-4">
+                    <img src="./asserts/dropDownArrows.png" alt="" />
+                    <div
+                      class="nav-link text-white fw-medium nav-text d-flex align-items-center"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img class="me-3" src="./asserts/GearSix.png" alt="" />
+                      Settings
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="dropdown-menu-text">
+                  <li class="text-white mb-3 mt-3">
+                    <a class="text-white text-decoration-none" href="#"
+                      >Approval</a
+                    >
+                  </li>
+                  <li class="text-white mb-3">
+                    <a class="text-white text-decoration-none" href="#"
+                      >Leave</a
+                    >
+                  </li>
+                  <li class="text-white mb-3">
+                    <a class="text-white text-decoration-none" href="#"
+                      >Office</a
+                    >
+                  </li>
+                  <li class="text-white mb-3">
+                    <a class="text-white text-decoration-none" href="#"
+                      >Subscriptions</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item hover-nav logout-text">
+                <a
+                  href="logout.html"
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+                >
+                  <img class="me-3" src="./asserts/logout.png" alt="" />
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+      <!-- mobile and tablet end -->
+
+      <!-- desktop device start -->
+      <aside class="bg-color h-100 d-lg-block d-none">
+        <h1 class="text-white text-center fs-3 fw-bold py-5">FED-NEXTGEN</h1>
+        <ul class="nav flex-column">
+          <li class="nav-item hover-nav mb-3">
+            <a
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+              aria-current="page"
+              href="index.html"
+            >
+              <img class="me-3" src="./asserts/Vector.png" alt="" />
+              Dashbord
+            </a>
+          </li>
+          <li class="nav-item hover-nav mb-3">
+            <a
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+              aria-current="page"
+              href="attendance.html"
+            >
+              <img class="me-3" src="./asserts/Vector.png" alt="" />
+              Attendance
+            </a>
+          </li>
+          <li class="nav-item hover-nav mb-3">
+            <a
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+              aria-current="page"
+              href="Employees.html"
+            >
+              <img class="me-3" src="./asserts/Vector.png" alt="" />
+              Employees
+            </a>
+          </li>
+          <li class="nav-item hover-nav mb-3">
+            <a
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+              aria-current="page"
+              href="leaves.html"
+            >
+              <img class="me-3" src="./asserts/Vector.png" alt="" />
+              Leaves
+            </a>
+          </li>
+          <li class="nav-item hover-nav mb-3">
+            <a
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+              aria-current="page"
+              href="expense.html"
+            >
+              <img class="me-3" src="./asserts/Vector.png" alt="" />
+              Expense
+            </a>
+          </li>
+          <li class="nav-item hover-nav mb-3">
+            <a
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+              aria-current="page"
+              href="notice.html"
+            >
+              <img class="me-3" src="./asserts/Vector.png" alt="" />
+              Notice
+            </a>
+          </li>
+          <li class="nav-item hover-nav mb-3">
+            <a
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+              aria-current="page"
+              href="departments.html"
+            >
+              <img class="me-3" src="./asserts/Vector.png" alt="" />
+              Departments
+            </a>
+          </li>
+
+          <!-- drop down menu -->
+          <li class="nav-item position-relative mb-3">
+            <div class="hover-nav" onclick="toggleMenu()">
+              <div class="d-flex align-items-center g-2 ms-4">
+                <img src="./asserts/dropDownArrows.png" alt="" />
+                <div
+                  class="nav-link text-white fw-medium nav-text d-flex align-items-center"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img class="me-3" src="./asserts/GearSix.png" alt="" />
+                  Settings
+                </div>
+              </div>
+            </div>
+
+            <ul class="dropdown-menu-text">
+              <li class="text-white mb-3 mt-3">
+                <a class="text-white text-decoration-none" href="#">Approval</a>
+              </li>
+              <li class="text-white mb-3">
+                <a class="text-white text-decoration-none" href="#">Leave</a>
+              </li>
+              <li class="text-white mb-3">
+                <a class="text-white text-decoration-none" href="#">Office</a>
+              </li>
+              <li class="text-white mb-3">
+                <a class="text-white text-decoration-none" href="#"
+                  >Subscriptions</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item hover-nav logout-text">
+            <a
+              href="logout.html"
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
+            >
+              <img class="me-3" src="./asserts/logout.png" alt="" />
+              Logout
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- desktop end -->
+    </header>
+
+    <!-- main content part -->
+    <main class="main-body">
+      <section>
+        <!-- header start -->
+        <div
+          class="bg-white py-2 pe-5 ps-5 d-flex justify-content-between align-items-center body-header"
+        >
+          <div
+            class="ms-lg-5 d-flex align-items-center position-relative search"
+          >
+            <div>
+              <input
+                type="text"
+                class="search-field py-2 ps-5 pe-4"
+                name=""
+                id=""
+                placeholder="SEARCH"
+              />
+            </div>
+
+            <div></div>
+            <div class="position-absolute search-btn">
+              <img src="./asserts/search.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-between gap-5 menus-items"
+          >
+            <!-- menu button -->
+            <div class="d-lg-none d-sm-block">
+              <button
+                class="btn bg-color text-white"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"
+              >
+                Menu
+              </button>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="me-5">
+                <img src="./asserts/calender.png" alt="" />
+              </div>
+              <div class="me-5 position-relative">
+                <img src="./asserts/notification.png" alt="" />
+                <span class="dot"></span>
+              </div>
+              <div class="ms-2">
+                <img class="avatar" src="./asserts/top-profile.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- header end -->
+
+        <!-- company status start -->
+        <div class="px-3 px-lg-5">
+          <div>
+            <h2 class="text-title-color title-texts fs-1 ms-2">Dashboard</h2>
+            <p class="fw-bold company-status text-black mb-4">Company Status</p>
+          </div>
+
+          <div class="company-card">
+            <!-- card-1 -->
+            <div class="company-card-item bg-white px-3 py-4 rounded-3">
+              <div>
+                <img src="./asserts/people.png" alt="" />
+                <span class="total-emloyee">Total Employee</span>
+              </div>
+              <div class="my-4 d-flex justify-content-between">
+                <h2 class="fw-bold fs-2 text-black">450</h2>
+                <div>
+                  <button class="btn btn-view bg-color text-white py-2 px-4">
+                    View All
+                  </button>
+                </div>
+              </div>
+              <hr />
+              <div class="mt-4 mb-2">
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-1.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-2.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-3.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-4.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-5.png"
+                  alt=""
+                />
+                <img class="people-avatar" src="./asserts/plus.png" alt="" />
+              </div>
+            </div>
+            <!-- card-2 -->
+            <div class="company-card-item bg-white px-3 py-4 rounded-3">
+              <div>
+                <img src="./asserts/people.png" alt="" />
+                <span class="total-emloyee">Attend Today</span>
+              </div>
+              <div class="my-4 d-flex justify-content-between">
+                <h2 class="fw-bold fs-2 text-black">420</h2>
+                <div>
+                  <button class="btn btn-view bg-color text-white py-2 px-4">
+                    View All
+                  </button>
+                </div>
+              </div>
+              <hr />
+              <div class="mt-4 mb-2">
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-1.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-2.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-3.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-4.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-5.png"
+                  alt=""
+                />
+                <img class="people-avatar" src="./asserts/plus.png" alt="" />
+              </div>
+            </div>
+            <!-- card-3 -->
+            <div class="company-card-item bg-white px-3 py-4 rounded-3">
+              <div>
+                <img src="./asserts/people.png" alt="" />
+                <span class="total-emloyee">Employees on Leave</span>
+              </div>
+              <div class="my-4 d-flex justify-content-between">
+                <h2 class="fw-bold fs-2 text-black">15</h2>
+                <div>
+                  <button class="btn btn-view bg-color text-white py-2 px-4">
+                    View All
+                  </button>
+                </div>
+              </div>
+              <hr />
+              <div class="mt-4 mb-2">
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-1.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-2.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-3.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-4.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-5.png"
+                  alt=""
+                />
+                <img class="people-avatar" src="./asserts/plus.png" alt="" />
+              </div>
+            </div>
+            <!-- card-4 -->
+            <div class="company-card-item bg-white px-3 py-4 rounded-3">
+              <div>
+                <img src="./asserts/people.png" alt="" />
+                <span class="total-emloyee">New Expense Request</span>
+              </div>
+              <div class="my-4 d-flex justify-content-between">
+                <h2 class="fw-bold fs-2 text-black">5</h2>
+                <div>
+                  <button class="btn btn-view bg-color text-white py-2 px-4">
+                    View All
+                  </button>
+                </div>
+              </div>
+              <hr />
+              <div class="mt-4 mb-2">
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-1.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-2.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-3.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-4.png"
+                  alt=""
+                />
+                <img
+                  class="people-avatar"
+                  src="./asserts/groupPeople-5.png"
+                  alt=""
+                />
+                <img class="people-avatar" src="./asserts/plus.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- company status end-->
+
+      <!-- Expense Report start -->
+      <section class="px-3 px-lg-5 expense-container d-flex gap-5">
+        <div class="expense-report-content">
+          <p class="fw-bold company-status text-black mb-4">Expense Report</p>
+          <div class="bg-white p-4 rounded-4">
+            <div>
+              <div
+                class="dayMonth d-flex gap-lg-5 align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center gap-4 mt-3">
+                  <p class="date text-black">Day</p>
+                  <p class="date">Week</p>
+                  <p class="date">Month</p>
+                  <p class="date">Year</p>
+                </div>
+                <div class="btn-export-content">
+                  <button class="btn btn-export bg-color text-white py-2 px-4">
+                    Export Details
+                  </button>
+                </div>
+              </div>
+              <div class="my-4">
+                <h1 class="text-black fw-bold fs-1 mb-4">৳45,000</h1>
+                <div>
+                  <canvas id="line-chart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- task summary start -->
+        <div class="task-summary-container">
+          <p class="fw-bold company-status text-black mb-4">Task Summary</p>
+          <div class="task-summary p-3">
+            <p class="task-title ms-0">Total task</p>
+            <h4>112</h4>
+
+            <div class="mt-3">
+              <p class="task-title mb-1">Completed</p>
+              <div class="progress position-relative" style="height: 30px">
+                <div
+                  class="progress-bar fs-6 fw-semibold progress-color1"
+                  style="width: 55%; height: 30px"
+                >
+                  <span class="progress-text position-absolute text-black"
+                    ><span class="progress-text-color">50/</span>80</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <p class="task-title mb-1">In Progress</p>
+              <div class="progress position-relative" style="height: 30px">
+                <div
+                  class="progress-bar fs-6 fw-semibold progress-color1"
+                  style="width: 5%; height: 30px"
+                >
+                  <span class="progress-text position-absolute text-black"
+                    >15<span class="progress-text-color">/</span>112</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <p class="task-title mb-1">Pending</p>
+              <div class="progress position-relative" style="height: 30px">
+                <div
+                  class="progress-bar fs-6 fw-semibold progress-color1"
+                  style="width: 30%; height: 30px"
+                >
+                  <span class="progress-text position-absolute text-black"
+                    >30<span class="progress-text-color">/</span>80</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- task summary start -->
+      </section>
+
+      <!-- Expense Report end -->
+      <section></section>
+    </main>
+    <footer></footer>
+    <!-- bootstrap js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- chart js -->
+    <script src="./JS/chart.js"></script>
+    <!-- custom js link -->
+    <script src="./JS/javaScript.js"></script>
+  </body>
+</html>
