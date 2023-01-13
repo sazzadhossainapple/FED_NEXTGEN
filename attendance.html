@@ -33,17 +33,24 @@
   </head>
   <body class="d-flex bg-primary-color">
     <!-- header part  -->
-    <header class="w-25">
+    <header class="header">
       <!-- mobile and tablet start -->
-      <button
-        class="btn btn-primary d-lg-none d-sm-block"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasScrolling"
-        aria-controls="offcanvasScrolling"
-      >
-        Enable body scrolling
-      </button>
+      <!-- <div class="d-lg-none d-sm-block">
+          <div class="mb-4 d-flex justify-content-between">
+            <h3>FED NEXTGEN</h3>
+            <div>
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"
+              >
+                Menu
+              </button>
+            </div>
+          </div>
+        </div> -->
 
       <div
         class="offcanvas offcanvas-start text-white bg-color d-sm-block d-lg-none"
@@ -67,10 +74,13 @@
 
         <div class="offcanvas-body bg-color">
           <aside class="h-100">
+            <h1 class="text-white text-center fs-3 fw-bold py-5">
+              Place A Logo Here
+            </h1>
             <ul class="nav flex-column">
               <li class="nav-item hover-nav mb-3">
                 <a
-                  class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
                   aria-current="page"
                   href="index.html"
                 >
@@ -80,7 +90,7 @@
               </li>
               <li class="nav-item hover-nav mb-3">
                 <a
-                  class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
                   aria-current="page"
                   href="attendance.html"
                 >
@@ -90,9 +100,9 @@
               </li>
               <li class="nav-item hover-nav mb-3">
                 <a
-                  class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
                   aria-current="page"
-                  href="index.html"
+                  href="Employees.html"
                 >
                   <img class="me-3" src="./asserts/Vector.png" alt="" />
                   Employees
@@ -100,9 +110,9 @@
               </li>
               <li class="nav-item hover-nav mb-3">
                 <a
-                  class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
                   aria-current="page"
-                  href="index.html"
+                  href="leaves.html"
                 >
                   <img class="me-3" src="./asserts/Vector.png" alt="" />
                   Leaves
@@ -110,9 +120,9 @@
               </li>
               <li class="nav-item hover-nav mb-3">
                 <a
-                  class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
                   aria-current="page"
-                  href="index.html"
+                  href="expense.html"
                 >
                   <img class="me-3" src="./asserts/Vector.png" alt="" />
                   Expense
@@ -120,9 +130,9 @@
               </li>
               <li class="nav-item hover-nav mb-3">
                 <a
-                  class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
                   aria-current="page"
-                  href="index.html"
+                  href="notice.html"
                 >
                   <img class="me-3" src="./asserts/Vector.png" alt="" />
                   Notice
@@ -130,9 +140,9 @@
               </li>
               <li class="nav-item hover-nav mb-3">
                 <a
-                  class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
                   aria-current="page"
-                  href="index.html"
+                  href="departments.html"
                 >
                   <img class="me-3" src="./asserts/Vector.png" alt="" />
                   Departments
@@ -140,12 +150,9 @@
               </li>
 
               <!-- drop down menu -->
-              <li class="nav-item mb-3">
-                <div class="hover-nav">
-                  <div
-                    class="d-flex align-items-center g-2 ms-4"
-                    onclick="toggleMenu()"
-                  >
+              <li class="nav-item position-relative mb-3">
+                <div class="hover-nav" onclick="toggleMenu()">
+                  <div class="d-flex align-items-center g-2 ms-4">
                     <img src="./asserts/dropDownArrows.png" alt="" />
                     <div
                       class="nav-link text-white fw-medium nav-text d-flex align-items-center"
@@ -160,7 +167,7 @@
                   </div>
                 </div>
 
-                <ul id="subMenu" class="dropdown-menu-text">
+                <ul class="dropdown-menu-text">
                   <li class="text-white mb-3 mt-3">
                     <a class="text-white text-decoration-none" href="#"
                       >Approval</a
@@ -186,8 +193,8 @@
 
               <li class="nav-item hover-nav logout-text">
                 <a
-                  href=""
-                  class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+                  href="logout.html"
+                  class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
                 >
                   <img class="me-3" src="./asserts/logout.png" alt="" />
                   Logout
@@ -200,14 +207,14 @@
       <!-- mobile and tablet end -->
 
       <!-- desktop device start -->
-      <aside class="bg-color d-lg-block d-none">
-        <h1 class="text-white text-center fs-3 fw-bold pt-4 pb-5">
+      <aside class="bg-color h-100 d-lg-block d-none">
+        <h1 class="text-white text-center fs-3 fw-bold py-5">
           Place A Logo Here
         </h1>
         <ul class="nav flex-column">
           <li class="nav-item hover-nav mb-3">
             <a
-              class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
               aria-current="page"
               href="index.html"
             >
@@ -217,7 +224,7 @@
           </li>
           <li class="nav-item hover-nav mb-3">
             <a
-              class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
               aria-current="page"
               href="attendance.html"
             >
@@ -227,9 +234,9 @@
           </li>
           <li class="nav-item hover-nav mb-3">
             <a
-              class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
               aria-current="page"
-              href="index.html"
+              href="Employees.html"
             >
               <img class="me-3" src="./asserts/Vector.png" alt="" />
               Employees
@@ -237,9 +244,9 @@
           </li>
           <li class="nav-item hover-nav mb-3">
             <a
-              class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
               aria-current="page"
-              href="index.html"
+              href="leaves.html"
             >
               <img class="me-3" src="./asserts/Vector.png" alt="" />
               Leaves
@@ -247,9 +254,9 @@
           </li>
           <li class="nav-item hover-nav mb-3">
             <a
-              class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
               aria-current="page"
-              href="index.html"
+              href="expense.html"
             >
               <img class="me-3" src="./asserts/Vector.png" alt="" />
               Expense
@@ -257,9 +264,9 @@
           </li>
           <li class="nav-item hover-nav mb-3">
             <a
-              class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
               aria-current="page"
-              href="index.html"
+              href="notice.html"
             >
               <img class="me-3" src="./asserts/Vector.png" alt="" />
               Notice
@@ -267,9 +274,9 @@
           </li>
           <li class="nav-item hover-nav mb-3">
             <a
-              class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
               aria-current="page"
-              href="index.html"
+              href="departments.html"
             >
               <img class="me-3" src="./asserts/Vector.png" alt="" />
               Departments
@@ -277,12 +284,9 @@
           </li>
 
           <!-- drop down menu -->
-          <li class="nav-item mb-3">
-            <div class="hover-nav">
-              <div
-                class="d-flex align-items-center g-2 ms-4"
-                onclick="toggleMenu()"
-              >
+          <li class="nav-item position-relative mb-3">
+            <div class="hover-nav" onclick="toggleMenu()">
+              <div class="d-flex align-items-center g-2 ms-4">
                 <img src="./asserts/dropDownArrows.png" alt="" />
                 <div
                   class="nav-link text-white fw-medium nav-text d-flex align-items-center"
@@ -297,7 +301,7 @@
               </div>
             </div>
 
-            <ul id="subMenu" class="dropdown-menu-text">
+            <ul class="dropdown-menu-text">
               <li class="text-white mb-3 mt-3">
                 <a class="text-white text-decoration-none" href="#">Approval</a>
               </li>
@@ -317,8 +321,8 @@
 
           <li class="nav-item hover-nav logout-text">
             <a
-              href=""
-              class="nav-link text-white fw-medium nav-text ms-5 d-flex align-items-center"
+              href="logout.html"
+              class="nav-link nav-items-link text-white fw-medium nav-text ps-5 d-flex align-items-center"
             >
               <img class="me-3" src="./asserts/logout.png" alt="" />
               Logout
@@ -328,11 +332,76 @@
       </aside>
       <!-- desktop end -->
     </header>
-    <main>
-      <!-- main content part -->
+
+    <!-- main content part -->
+    <main class="main-body">
       <section>
-        <h1>hello</h1>
+        <!-- header start -->
+        <div
+          class="bg-white py-2 pe-5 ps-5 d-flex justify-content-between align-items-center body-header"
+        >
+          <div
+            class="ms-lg-5 d-flex align-items-center position-relative search"
+          >
+            <div>
+              <input
+                type="text"
+                class="search-field py-2 ps-5 pe-4"
+                name=""
+                id=""
+                placeholder="SEARCH"
+              />
+            </div>
+
+            <div></div>
+            <div class="position-absolute search-btn">
+              <img src="./asserts/search.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-between gap-5 menus-items"
+          >
+            <!-- menu button -->
+            <div class="d-lg-none d-sm-block">
+              <button
+                class="btn bg-color text-white"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"
+              >
+                Menu
+              </button>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="me-5">
+                <img src="./asserts/calender.png" alt="" />
+              </div>
+              <div class="me-5 position-relative">
+                <img src="./asserts/notification.png" alt="" />
+                <span class="dot"></span>
+              </div>
+              <div class="ms-2">
+                <img class="avatar" src="./asserts/top-profile.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- header end -->
+
+        <!-- company status start -->
+        <div class="px-5">
+          <div>
+            <h2 class="text-title-color title-texts fs-1 ms-2">Attendance</h2>
+            <div>
+              <button class="btn btn-download bg-color text-white py-2 px-4">
+                Download Report
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- company status end-->
     </main>
     <footer></footer>
     <!-- bootstrap js link -->
@@ -341,6 +410,8 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- custom js link -->
     <script src="./JS/javaScript.js"></script>
   </body>
 </html>
