@@ -283,11 +283,10 @@
   }
   .body-header {
     width: 100%;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    align-items: center;
   }
-  .menus-items {
-    margin-bottom: 30px;
-  }
+
   .company-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
