@@ -199,15 +199,77 @@
 /*===== attendance page =====*/
 
 .btn-download {
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
   border-radius: 10px;
-  padding: 8px 16px;
+  padding: 12px 25px !important;
   border-left: 1px solid #1e2772;
   box-shadow: 0px 5px 5px #2d389e7a;
 }
 .btn-download:hover {
   background-color: #102048;
+}
+
+/*form*/
+.input-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 39px 9px;
+}
+.input-form .form-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #555555;
+}
+
+/* tabel */
+.table-content {
+  padding-bottom: 8rem;
+}
+.tabel-th {
+  font-weight: 400;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.table-text {
+  font-weight: 400;
+  font-size: 13px;
+  color: #1c1c1c;
+}
+.btn1-table {
+  padding: 0px 5px !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  background-color: #4aa785;
+  border: none;
+}
+.btn2-table {
+  color: #ffffff;
+  padding: 0px 5px !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  background-color: #e25959;
+  border: none;
+}
+.btn2-table:hover {
+  color: #ffffff;
+  background-color: #e95353;
+}
+.table-check:checked {
+  background-color: #000000;
+  border: #000000;
+}
+/*pagination-container*/
+.pagination-container {
+  margin-top: 97px;
+}
+.pagination-number-bg-color {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.pagination-number {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 /* ========== MEDIA QUERIES (TABLET DEVICE) ========== */
@@ -249,6 +311,11 @@
   }
   .task-summary {
     height: 100%;
+  }
+  /*attendance page style*/
+  .input-form {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 9px;
   }
 }
 
@@ -296,5 +363,21 @@
   .dayMonth {
     flex-direction: column-reverse;
     gap: 0.5rem;
+  }
+  /*attendance page style*/
+  .attendance-conatiner {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .input-form {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+  .table-content {
+    padding-bottom: 3rem;
+  }
+  /*pagination*/
+  .pagination-container {
+    margin-top: 40px;
   }
 }
