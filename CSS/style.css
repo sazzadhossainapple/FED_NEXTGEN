@@ -10,7 +10,7 @@
   background-color: #f4f4f4;
 }
 .bg-color {
-  background-color: #1e2772;
+  background-color: #1e2772 !important;
 }
 .text-title-color {
   color: #102048;
@@ -253,12 +253,13 @@
 }
 .btn2-table:hover {
   color: #ffffff;
-  background-color: #e95353;
+  background-color: #e95353 !important;
 }
 .table-check:checked {
-  background-color: #000000;
+  background-color: #000000 !important;
   border: #000000;
 }
+
 /*pagination-container*/
 .pagination-container {
   margin-top: 97px;
