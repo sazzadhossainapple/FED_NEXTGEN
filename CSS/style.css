@@ -211,15 +211,32 @@
 }
 
 /*form*/
+.form-container {
+  margin-bottom: 130px;
+}
 .input-form {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 39px 9px;
 }
 .input-form .form-text {
   font-weight: 400;
   font-size: 16px;
   color: #555555;
+}
+.employee-search-icon {
+  position: absolute;
+  top: 40%;
+  right: 23px;
+}
+.date-from {
+  position: absolute;
+  top: 39%;
+  left: 12px;
+  color: #1e2772;
+}
+.date-calender-input {
+  padding-left: 4rem;
 }
 
 /* table */
@@ -260,6 +277,113 @@
   border: #000000;
 }
 
+.remark {
+  color: #8a8cd9;
+  font-size: 12px;
+  font-weight: 400;
+}
+.remark-reason {
+  color: #ffc555;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/*modal*/
+.modal-text-title {
+  font-size: 32px;
+  color: #102048;
+  font-weight: 700;
+}
+.modal-profile {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 19px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  vertical-align: middle;
+}
+.profile-container {
+  gap: 6px;
+}
+.profile-title {
+  font-size: 12px;
+}
+.designation {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+}
+.modal-grid-date {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.attendance-day {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.btn-modal-download {
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 8px 15px !important;
+  border-left: 1px solid #004eda;
+  box-shadow: 0px 5px 5px #2f3db47a;
+  background-color: #004eda !important;
+}
+.clock-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  background: #38a8af;
+  border-radius: 10px;
+}
+.text-icon {
+  display: flex;
+  gap: 6px;
+}
+
+.clock-text h6 {
+  font-size: 10px;
+  color: #000000;
+  font-weight: 700;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+.clock-text p {
+  font-size: 10px;
+  color: #000000;
+  font-weight: 400;
+  margin-top: 1px;
+}
+
+.present-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  background: #2942aa;
+  border-radius: 10px;
+}
+.absent-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  background: #e76218;
+  border-radius: 10px;
+}
 /*pagination-container*/
 .pagination-container {
   margin-top: 97px;
@@ -372,6 +496,9 @@
   .input-form {
     grid-template-columns: 1fr;
     gap: 9px;
+  }
+  .form-container {
+    margin-bottom: 50px;
   }
   .table-content {
     padding-bottom: 3rem;

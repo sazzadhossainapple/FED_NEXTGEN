@@ -29,7 +29,7 @@
 
     <!-- custom css link -->
     <link rel="stylesheet" href="CSS/style.css" />
-    <title>FED NEXTGEN</title>
+    <title>Team 360</title>
   </head>
   <body class="d-flex bg-primary-color">
     <!-- header part  -->
@@ -44,7 +44,7 @@
       >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">
-            FED NEXTGEN
+            Team 360
           </h5>
           <button
             type="button"
@@ -190,7 +190,7 @@
 
       <!-- desktop device start -->
       <aside class="bg-color h-100 d-lg-block d-none">
-        <h1 class="text-white text-center fs-3 fw-bold py-5">FED NEXTGEN</h1>
+        <h1 class="text-white text-center fs-3 fw-bold py-5">Team 360</h1>
         <ul class="nav flex-column">
           <li class="nav-item hover-nav mb-3">
             <a
@@ -320,24 +320,26 @@
         <div
           class="bg-white py-2 pe-5 ps-5 d-flex justify-content-between align-items-center body-header"
         >
-          <div
-            class="ms-lg-5 d-flex align-items-center position-relative search"
-          >
-            <div>
-              <input
-                type="text"
-                class="search-field py-2 ps-5 pe-4"
-                name=""
-                id=""
-                placeholder="SEARCH"
-              />
-            </div>
+          <div class="d-md-block d-none">
+            <div
+              class="ms-lg-5 d-flex align-items-center position-relative search"
+            >
+              <div>
+                <input
+                  type="text"
+                  class="search-field py-2 ps-5 pe-4"
+                  name=""
+                  id=""
+                  placeholder="SEARCH"
+                />
+              </div>
 
-            <div></div>
-            <div class="position-absolute search-btn">
-              <img src="./asserts/search.png" alt="" />
+              <div class="position-absolute search-btn">
+                <img src="./asserts/search.png" alt="" />
+              </div>
             </div>
           </div>
+
           <div
             class="d-flex align-items-center justify-content-between gap-5 menus-items"
           >
@@ -390,29 +392,37 @@
         <!-- attendance end -->
       </section>
       <!-- form start-->
-      <section class="px-3 px-lg-5 pt-5 pb-3">
+      <section class="form-container px-3 px-lg-5 pt-5">
         <div>
           <form class="input-form">
-            <div>
-              <input
-                type="date"
-                class="form-control px-3 py-4 form-text"
-                name=""
-                id=""
+            <div class="position-relative">
+              <img
+                class="employee-search-icon"
+                src="./asserts/employeeSearch.png"
+                alt=""
               />
-            </div>
-
-            <div>
               <input
                 type="text"
-                class="form-control py-4 px-3 form-text"
+                class="form-control py-4 ps-3 pe-5 form-text"
                 id=""
-                placeholder="Department"
+                placeholder="Employee ID or Name"
               />
             </div>
             <div>
               <select
                 class="form-select form-control form-select-lg py-4 form-text"
+                aria-label=".form-select-lg example"
+              >
+                <option selected>Department</option>
+                <option value="1">HR and Admin</option>
+                <option value="2">IT</option>
+                <option value="3">Design and Creative</option>
+              </select>
+            </div>
+
+            <div>
+              <select
+                class="form-select form-select-lg py-4 form-text"
                 aria-label=".form-select-lg example"
               >
                 <option selected>Attendance</option>
@@ -421,54 +431,23 @@
                 <option value="3">Three</option>
               </select>
             </div>
-            <div>
-              <select
-                class="form-select form-select-lg py-4 form-text"
-                aria-label=".form-select-lg example"
-              >
-                <option selected>Present</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div>
+            <div class="position-relative">
+              <span class="date-from">From:</span>
               <input
-                type="text"
-                class="form-control py-4 px-3 form-text"
+                type="date"
+                class="form-control date-calender-input pe-3 py-4 form-text"
+                name=""
                 id=""
-                placeholder="Check In"
               />
             </div>
-            <div>
+            <div class="position-relative">
+              <span class="date-from">To:</span>
               <input
-                type="text"
-                class="form-control py-4 px-3 form-text"
+                type="date"
+                class="form-control date-calender-input pe-3 py-4 form-text"
+                name=""
                 id=""
-                placeholder="Location"
               />
-            </div>
-            <div>
-              <select
-                class="form-select form-control form-select-lg py-4 form-text"
-                aria-label=".form-select-lg example"
-              >
-                <option selected>Designation</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div>
-              <select
-                class="form-select form-control form-select-lg py-4 form-text"
-                aria-label=".form-select-lg example"
-              >
-                <option selected>Department</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
             </div>
           </form>
         </div>
@@ -497,7 +476,7 @@
                   <th class="tabel-th" scope="col">Check In</th>
                   <th class="tabel-th" scope="col">Check Out</th>
                   <th class="tabel-th" scope="col">Remark</th>
-                  <th class="tabel-th" scope="col">Hours</th>
+                  <th class="tabel-th" scope="col">Location</th>
                   <th class="tabel-th" scope="col">Overtime</th>
                   <th class="tabel-th" scope="col">Action</th>
                 </tr>
@@ -524,12 +503,19 @@
                       06:05 am
                     </button>
                   </td>
-                  <td class="table-text"></td>
-                  <td class="table-text"></td>
+                  <td class="table-text remark">N/A</td>
+                  <td class="table-text text-center">
+                    <img src="./asserts/location.png" alt="" />
+                  </td>
                   <td class="table-text"></td>
                   <td class="table-text">
                     <div class="ms-3">
-                      <img src="./asserts/eye.png" alt="" />
+                      <img
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        src="./asserts/eye.png"
+                        alt=""
+                      />
                     </div>
                   </td>
                 </tr>
@@ -565,16 +551,19 @@
                       05:30 am
                     </button>
                   </td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <img src="./asserts/doc.png" alt="" />
-                    </div>
+                  <td class="table-text remark-reason">Reason......</td>
+                  <td class="table-text text-center">
+                    <img src="./asserts/location.png" alt="" />
                   </td>
                   <td class="table-text"></td>
-                  <td class="table-text"></td>
                   <td class="table-text">
                     <div class="ms-3">
-                      <img src="./asserts/eye.png" alt="" />
+                      <img
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        src="./asserts/eye.png"
+                        alt=""
+                      />
                     </div>
                   </td>
                 </tr>
@@ -599,12 +588,19 @@
                       06:30 am
                     </button>
                   </td>
-                  <td class="table-text"></td>
-                  <td class="table-text"></td>
+                  <td class="table-text remark"></td>
+                  <td class="table-text text-center">
+                    <img src="./asserts/location.png" alt="" />
+                  </td>
                   <td class="table-text"></td>
                   <td class="table-text">
                     <div class="ms-3">
-                      <img src="./asserts/eye.png" alt="" />
+                      <img
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        src="./asserts/eye.png"
+                        alt=""
+                      />
                     </div>
                   </td>
                 </tr>
@@ -641,22 +637,204 @@
                       05:45 am
                     </button>
                   </td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <img src="./asserts/doc.png" alt="" />
-                    </div>
+                  <td class="table-text remark-reason"></td>
+                  <td class="table-text text-center">
+                    <img src="./asserts/location.png" alt="" />
                   </td>
                   <td class="table-text"></td>
-                  <td class="table-text"></td>
                   <td class="table-text">
                     <div class="ms-3">
-                      <img src="./asserts/eye.png" alt="" />
+                      <img
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        src="./asserts/eye.png"
+                        alt=""
+                      />
                     </div>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
+
+          <!-- modal start -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title modal-text-title fs-5"
+                    id="exampleModalLabel"
+                  >
+                    Attendance Summary
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body mb-5">
+                  <div class="d-flex profile-container">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="avatar"
+                        src="./asserts/modalProfileImg.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="modal-profile">
+                      <div>
+                        <h4 class="text-black fw-bold profile-title mt-3">
+                          Lauren Garsier
+                        </h4>
+                        <p class="designation">Senior Designer</p>
+                      </div>
+                      <div>
+                        <h4 class="text-black fw-bold profile-title mt-3">
+                          Department
+                        </h4>
+                        <p class="designation">Product DevelopM.</p>
+                      </div>
+                      <div>
+                        <h4 class="text-black fw-bold profile-title mt-3">
+                          SHIFT SchduelE
+                        </h4>
+                        <p class="designation">MOrNING SHIFT</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-grid-date">
+                    <div>
+                      <div class="position-relative">
+                        <span class="date-from">From:</span>
+                        <input
+                          type="date"
+                          class="form-control date-calender-input pe-3 py-4 form-text"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="position-relative">
+                        <span class="date-from">To:</span>
+                        <input
+                          type="date"
+                          class="form-control date-calender-input pe-3 py-4 form-text"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <div>
+                        <button
+                          class="btn btn-download btn-modal-download text-white"
+                        >
+                          Download Report
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="attendance-day">
+                    <div class="d-flex text-icon">
+                      <div class="clock-icon">
+                        <i class="bi bi-clock"></i>
+                      </div>
+                      <div class="clock-text text-uppercase">
+                        <h6>Worlking Day</h6>
+                        <p class="text-center">23 Days</p>
+                      </div>
+                    </div>
+                    <div class="d-flex text-icon">
+                      <div class="present-icon">
+                        <i class="bi bi-person-add"></i>
+                      </div>
+                      <div class="clock-text text-uppercase">
+                        <h6>Present</h6>
+                        <p class="text-center">0</p>
+                      </div>
+                    </div>
+                    <div class="d-flex text-icon">
+                      <div class="absent-icon">
+                        <i class="bi bi-stopwatch"></i>
+                      </div>
+                      <div class="clock-text text-uppercase">
+                        <h6>absent</h6>
+                        <p class="text-center">0</p>
+                      </div>
+                    </div>
+                    <div class="d-flex text-icon">
+                      <div class="clock-icon">
+                        <i class="bi bi-clock"></i>
+                      </div>
+                      <div class="clock-text text-uppercase">
+                        <h6>Work Time</h6>
+                        <p class="text-center">N/A</p>
+                      </div>
+                    </div>
+                    <div class="d-flex text-icon">
+                      <div class="present-icon">
+                        <i class="bi bi-person-add"></i>
+                      </div>
+                      <div class="clock-text text-uppercase">
+                        <h6>On lEave</h6>
+                        <p class="text-center">0</p>
+                      </div>
+                    </div>
+                    <div class="d-flex text-icon">
+                      <div class="absent-icon">
+                        <i class="bi bi-stopwatch"></i>
+                      </div>
+                      <div class="clock-text text-uppercase">
+                        <h6>On Time</h6>
+                        <p class="text-center">0</p>
+                      </div>
+                    </div>
+                    <div class="d-flex text-icon">
+                      <div class="clock-icon">
+                        <i class="bi bi-clock"></i>
+                      </div>
+                      <div class="clock-text text-uppercase">
+                        <h6>Late</h6>
+                        <p class="text-center">0</p>
+                      </div>
+                    </div>
+                    <div class="d-flex text-icon">
+                      <div class="present-icon">
+                        <i class="bi bi-person-add"></i>
+                      </div>
+                      <div class="clock-text text-uppercase">
+                        <h6>left timely</h6>
+                        <p class="text-center">0</p>
+                      </div>
+                    </div>
+                    <div class="d-flex text-icon">
+                      <div class="absent-icon">
+                        <i class="bi bi-stopwatch"></i>
+                      </div>
+                      <div class="clock-text text-uppercase">
+                        <h6>Left early</h6>
+                        <p class="text-center">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
           <!-- pagination -->
           <div>
             <nav aria-label="Page navigation example">
