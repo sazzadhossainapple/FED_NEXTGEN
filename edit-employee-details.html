@@ -392,14 +392,26 @@
           <!-- profiles start -->
           <div>
             <div class="employee-profile">
-              <div class="border rounded-4 change-photo">
-                <img
+              <div
+                class="border d-flex align-items-center rounded-4 change-photo"
+              >
+                <div class="employee-profile-img"></div>
+                <!-- <img
+                  id="profileImage"
                   class="rounded-circle employee-profile-img"
                   src="./asserts/employeProfileEditImage.png"
                   alt=""
+                /> -->
+                <input
+                  type="file"
+                  accept="image/*"
+                  name="image"
+                  id="imgUpload"
                 />
-                <span class="text-black fw-medium px-3">Change photo</span>
-                <img src="./asserts/editIcon.png" alt="" />
+                <label for="imgUpload">
+                  <span class="text-black fw-medium px-3">Change photo</span>
+                  <img src="./asserts/editIcon.png" alt="" />
+                </label>
               </div>
               <div class="my-3">
                 <div class="mb-3">
