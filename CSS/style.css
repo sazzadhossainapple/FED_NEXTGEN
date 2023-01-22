@@ -430,6 +430,13 @@
   box-shadow: 0px 3px 3px #2d389e7a;
 }
 
+/* add employee modal page */
+
+.add-employee-modal-dialog {
+  width: 950px !important;
+  margin-left: auto !important;
+}
+
 /*===== employees-details page =====*/
 .edit-text-profile {
   font-weight: 400;
