@@ -378,17 +378,8 @@
           >
             <div>
               <h2 class="text-title-color title-texts fs-1 ms-md-2 ms-lg-2">
-                Employees
+                Employee Details
               </h2>
-            </div>
-            <div>
-              <button
-                class="btn btn-download bg-color text-white me-5"
-                data-bs-toggle="modal"
-                data-bs-target="#addEmployeeModal"
-              >
-                Add Employee
-              </button>
             </div>
           </div>
         </div>
@@ -463,331 +454,75 @@
       </section>
       <!-- form send-->
 
-      <!-- table start -->
+      <!-- employee-details start -->
       <section class="px-3 px-lg-5 my-5">
-        <div class="rounded-2 table-containers">
-          <div class="d-flex justify-content-end gap-2 pt-2 pb-4 pe-4">
-            <button
-              type="button"
-              class="btn bg-secondary-color rounded-3 text-white btn-import-details"
-              style="
-                --bs-btn-padding-y: 0.25rem;
-                --bs-btn-padding-x: 0.5rem;
-                --bs-btn-font-size: 0.75rem;
-              "
-            >
-              Import Details
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary rounded-3 btn-export-details"
-              style="
-                --bs-btn-padding-y: 0.25rem;
-                --bs-btn-padding-x: 0.5rem;
-                --bs-btn-font-size: 0.75rem;
-              "
-            >
-              Export Details
-            </button>
-          </div>
-          <div class="table-responsive table-responsive-md table-responsive-sm">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th class="tabel-th" scope="col">
-                    <input
-                      class="form-check-input table-check"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
+        <div class="rounded-2 bg-white p-3 p-md-5">
+          <div class="d-flex justify-content-end align-items-center">
+            <div class="d-flex gap-4">
+              <p class="edit-text-profile">Edit Profile</p>
+              <div>
+                <a href="./edit-employee-details.html">
+                  <div class="position-relative">
+                    <img src="/asserts/editIcon.png" alt="" />
+                    <img
+                      class="position-absolute pen-icon"
+                      src="/asserts/editPenIcon.png"
+                      alt=""
                     />
-                    <label class="form-check-label ps-4" for="flexCheckDefault">
-                      Employee ID
-                    </label>
-                  </th>
-                  <th class="tabel-th" scope="col">Employee Name</th>
-                  <th class="tabel-th" scope="col">Designation</th>
-                  <th class="tabel-th" scope="col">Department</th>
-                  <th class="tabel-th" scope="col">Contact Number</th>
-                  <th class="tabel-th" scope="col">Email Address</th>
-
-                  <th class="tabel-th" scope="col">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="table-text ps-md-4 ps-lg-5" scope="row">
-                    NGILHR06
-                  </th>
-                  <td class="table-text">Shariar Ahmed</td>
-                  <td class="table-text">Sofware Engineer</td>
-                  <td class="table-text">Adminstration</td>
-
-                  <td class="table-text text-center">01714939393</td>
-                  <td class="table-text">example@email.com</td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <a href="/Employee-Details.html">
-                        <button
-                          type="button"
-                          class="btn bg-color text-white rounded-3 btn-table-view"
-                          style="
-                            --bs-btn-padding-y: 0.25rem;
-                            --bs-btn-padding-x: 0.5rem;
-                            --bs-btn-font-size: 0.75rem;
-                          "
-                        >
-                          View Details
-                        </button>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="table-text ps-md-4 ps-lg-5" scope="row">
-                    NGILHR06
-                  </th>
-                  <td class="table-text">Shariar Ahmed</td>
-                  <td class="table-text">Sofware Engineer</td>
-                  <td class="table-text">Adminstration</td>
-
-                  <td class="table-text text-center">01714939393</td>
-                  <td class="table-text">example@email.com</td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <a href="/Employee-Details.html">
-                        <button
-                          type="button"
-                          class="btn bg-color text-white rounded-3 btn-table-view"
-                          style="
-                            --bs-btn-padding-y: 0.25rem;
-                            --bs-btn-padding-x: 0.5rem;
-                            --bs-btn-font-size: 0.75rem;
-                          "
-                        >
-                          View Details
-                        </button>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="table-text ps-md-4 ps-lg-5" scope="row">
-                    NGILHR06
-                  </th>
-                  <td class="table-text">Shariar Ahmed</td>
-                  <td class="table-text">Sofware Engineer</td>
-                  <td class="table-text">Adminstration</td>
-
-                  <td class="table-text text-center">01714939393</td>
-                  <td class="table-text">example@email.com</td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <a href="/Employee-Details.html">
-                        <button
-                          type="button"
-                          class="btn bg-color text-white rounded-3 btn-table-view"
-                          style="
-                            --bs-btn-padding-y: 0.25rem;
-                            --bs-btn-padding-x: 0.5rem;
-                            --bs-btn-font-size: 0.75rem;
-                          "
-                        >
-                          View Details
-                        </button>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="table-text ps-md-4 ps-lg-5" scope="row">
-                    NGILHR06
-                  </th>
-                  <td class="table-text">Shariar Ahmed</td>
-                  <td class="table-text">Sofware Engineer</td>
-                  <td class="table-text">Adminstration</td>
-
-                  <td class="table-text text-center">01714939393</td>
-                  <td class="table-text">example@email.com</td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <a href="/Employee-Details.html">
-                        <button
-                          type="button"
-                          class="btn bg-color text-white rounded-3 btn-table-view"
-                          style="
-                            --bs-btn-padding-y: 0.25rem;
-                            --bs-btn-padding-x: 0.5rem;
-                            --bs-btn-font-size: 0.75rem;
-                          "
-                        >
-                          View Details
-                        </button>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="table-text ps-md-4 ps-lg-5" scope="row">
-                    NGILHR06
-                  </th>
-                  <td class="table-text">Shariar Ahmed</td>
-                  <td class="table-text">Sofware Engineer</td>
-                  <td class="table-text">Adminstration</td>
-
-                  <td class="table-text text-center">01714939393</td>
-                  <td class="table-text">example@email.com</td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <a href="/Employee-Details.html">
-                        <button
-                          type="button"
-                          class="btn bg-color text-white rounded-3 btn-table-view"
-                          style="
-                            --bs-btn-padding-y: 0.25rem;
-                            --bs-btn-padding-x: 0.5rem;
-                            --bs-btn-font-size: 0.75rem;
-                          "
-                        >
-                          View Details
-                        </button>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="table-text ps-md-4 ps-lg-5" scope="row">
-                    NGILHR06
-                  </th>
-                  <td class="table-text">Shariar Ahmed</td>
-                  <td class="table-text">Sofware Engineer</td>
-                  <td class="table-text">Adminstration</td>
-
-                  <td class="table-text text-center">01714939393</td>
-                  <td class="table-text">example@email.com</td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <a href="/Employee-Details.html">
-                        <button
-                          type="button"
-                          class="btn bg-color text-white rounded-3 btn-table-view"
-                          style="
-                            --bs-btn-padding-y: 0.25rem;
-                            --bs-btn-padding-x: 0.5rem;
-                            --bs-btn-font-size: 0.75rem;
-                          "
-                        >
-                          View Details
-                        </button>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- pagination -->
-        <div>
-          <nav aria-label="Page navigation example">
-            <ul
-              class="pagination d-flex justify-content-end me-5 pagination-container"
-            >
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number"
-                  href="#"
-                  aria-label="Previous"
-                >
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number pagination-number-bg-color"
-                  href="#"
-                  >1</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number"
-                  href="#"
-                  >2</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number"
-                  href="#"
-                  >3</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number"
-                  href="#"
-                  >4</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number"
-                  href="#"
-                  >5</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number"
-                  href="#"
-                  aria-label="Next"
-                >
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div>
+            <div class="employee-profile">
+              <img
+                class="rounded-circle employee-profile-img"
+                src="./asserts/employeProfileEditImage.png"
+                alt=""
+              />
+              <h3>Shahriar Ahmed</h3>
+              <p>Software Engineer</p>
+            </div>
+          </div>
+          <div class="employee-info d-flex justify-content-between">
+            <div>
+              <p class="employee-info-text">Employee ID: NG001</p>
+              <p class="employee-info-text">Deartment: Creative</p>
+              <p class="employee-info-text">Reporting To: Shumon Khan</p>
+              <p class="employee-info-text2">Joining date: 15 Dec, 2022</p>
+            </div>
+            <div>
+              <p class="employee-info-text2">Mobile No: 01744668826</p>
+              <p class="employee-info-text2">E-mail: namae@example.com</p>
+              <p class="employee-info-text2">Birthday: 25 Dec 1998</p>
+              <p class="employee-info-text2">
+                Address: 123, Summit Villa, Banani
+              </p>
+            </div>
+          </div>
+          <div>
+            <hr class="employee-divided" />
+          </div>
+          <div class="employee-info d-flex justify-content-between">
+            <div>
+              <h4 class="info-titel">Personal Information</h4>
+              <p class="employee-info-text2">NID Numer: 555 999 666</p>
+              <p class="employee-info-text2">Nationality: Bangladeshi</p>
+              <p class="employee-info-text2">Marital Status: Unmarried</p>
+              <p class="employee-info-text2">Religion: Islam</p>
+              <p class="employee-info-text2">Blood Group: O+</p>
+            </div>
+            <div>
+              <h4 class="info-titel">Emergency Contact</h4>
+              <p class="employee-info-text2">Name: Mithul Ahmed</p>
+              <p class="employee-info-text2">Mobile No: 01744666688</p>
+              <p class="employee-info-text2">Relationship: Brother</p>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- table end -->
-      <!-- modal add employee start -->
-
-      <div
-        class="modal fade"
-        id="addEmployeeModal"
-        tabindex="-1"
-        aria-labelledby="addEmployeeModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">...</div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- modal add employee end -->
+      <!-- employee-details end -->
     </main>
     <footer></footer>
     <!-- bootstrap js link -->

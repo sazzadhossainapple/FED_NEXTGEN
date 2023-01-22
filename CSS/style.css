@@ -9,6 +9,9 @@
 .bg-primary-color {
   background-color: #f4f4f4;
 }
+.bg-secondary-color {
+  background-color: #004eda !important;
+}
 .bg-color {
   background-color: #1e2772 !important;
 }
@@ -223,6 +226,7 @@
   font-weight: 400;
   font-size: 16px;
   color: #555555;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .employee-search-icon {
   position: absolute;
@@ -289,6 +293,11 @@
 }
 
 /*modal*/
+.modal-dialog-width {
+  max-width: 600px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
 .modal-text-title {
   font-size: 32px;
   color: #102048;
@@ -315,8 +324,9 @@
 }
 .modal-grid-date {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  align-items: center;
 }
 .attendance-day {
   width: 100%;
@@ -347,14 +357,14 @@
 }
 .text-icon {
   display: flex;
-  gap: 6px;
+  gap: 20px;
 }
 
 .clock-text h6 {
   font-size: 10px;
   color: #000000;
   font-weight: 700;
-  margin-top: 3px;
+  margin-top: 10px;
   margin-bottom: 0px;
 }
 .clock-text p {
@@ -395,6 +405,125 @@
 .pagination-number {
   font-size: 12px;
   font-weight: 400;
+}
+
+/*===== employees page =====*/
+.search-icons {
+  position: absolute;
+  top: 35% !important;
+}
+
+.table-containers {
+  background: #f7f9fb;
+  border-radius: 8px;
+}
+
+.btn-import-details {
+  box-shadow: 0px 3px 3px #2d389e7a;
+}
+.btn-export-details {
+  background: #6bbcf7;
+  border: 1px solid #6bbcf7;
+  box-shadow: 0px 3px 3px rgba(1, 11, 253, 0.12);
+}
+.btn-table-view {
+  box-shadow: 0px 3px 3px #2d389e7a;
+}
+
+/*===== employees-details page =====*/
+.edit-text-profile {
+  font-weight: 400;
+  font-size: 24px;
+  color: #555555;
+  margin-top: 5px;
+}
+.pen-icon {
+  right: 1px;
+}
+
+.employee-profile .employee-profile-img {
+  width: 105px;
+  height: 105px;
+  border: 8px solid #c6eae9;
+}
+
+.employee-profile h3 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  color: #1e2772;
+  margin-top: 25px;
+}
+.employee-profile p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #555555;
+}
+
+.employee-info {
+  margin: 60px 0px;
+}
+.employee-info-text {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 500;
+}
+.employee-info-text2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.employee-divided {
+  color: #000000 !important;
+}
+.info-titel {
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 600;
+  color: #1e2772;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+/*===== edit employees-details page =====*/
+.change-photo {
+  width: 350px;
+}
+.text-input-field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-field {
+  width: 250px !important;
+}
+.border-fields {
+  border: 1px solid #555555 !important;
+}
+.input-text-name {
+  width: 250px !important;
+  font-weight: 600;
+  font-size: 24px;
+  color: #1e2772 !important;
+}
+.input-designation {
+  width: 250px !important;
+  font-size: 16px;
+  color: #555555 !important;
+}
+.input-color-text {
+  color: #555555 !important;
+}
+.btn-cancel {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 12px 55px !important;
+  background-color: #ef2637 !important;
+  border-left: 1px solid #ef2637;
+  box-shadow: 0px 5px 5px #ef263796;
 }
 
 /* ========== MEDIA QUERIES (TABLET DEVICE) ========== */
@@ -440,6 +569,10 @@
   .input-form {
     grid-template-columns: 1fr 1fr;
     gap: 30px 9px;
+  }
+  /*employee-details page*/
+  .employee-info {
+    flex-direction: column;
   }
 }
 
@@ -506,5 +639,29 @@
   /*pagination*/
   .pagination-container {
     margin-top: 40px;
+  }
+  /*employee-details page*/
+  .employee-info {
+    flex-direction: column;
+  }
+  .employee-info-text {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+  }
+  .employee-info-text2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+  }
+  /*edit employee details*/
+  .text-input-field {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .text-input-field {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

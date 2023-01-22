@@ -378,416 +378,258 @@
           >
             <div>
               <h2 class="text-title-color title-texts fs-1 ms-md-2 ms-lg-2">
-                Employees
+                Edit Employee Details
               </h2>
-            </div>
-            <div>
-              <button
-                class="btn btn-download bg-color text-white me-5"
-                data-bs-toggle="modal"
-                data-bs-target="#addEmployeeModal"
-              >
-                Add Employee
-              </button>
             </div>
           </div>
         </div>
         <!-- employee end -->
       </section>
-      <!-- form start-->
-      <section class="form-container px-3 px-lg-5 pt-5">
-        <div>
-          <form class="input-form">
-            <div class="position-relative">
-              <img
-                class="employee-search-icon"
-                src="./asserts/employeeSearch.png"
-                alt=""
-              />
-              <input
-                type="text"
-                class="form-control py-4 ps-3 pe-5 form-text"
-                id=""
-                placeholder="Employee ID"
-              />
-            </div>
-            <div class="position-relative">
-              <img
-                class="employee-search-icon"
-                src="./asserts/employeeSearch.png"
-                alt=""
-              />
-              <input
-                type="text"
-                class="form-control py-4 ps-3 pe-5 form-text"
-                id=""
-                placeholder="Employee Name"
-              />
-            </div>
-            <div>
-              <select
-                class="form-select form-select-lg py-4 form-text"
-                aria-label=".form-select-lg example"
-              >
-                <option selected>Designation</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div>
-              <select
-                class="form-select form-control form-select-lg py-4 form-text"
-                aria-label=".form-select-lg example"
-              >
-                <option selected>Department</option>
-                <option value="1">HR and Admin</option>
-                <option value="2">IT</option>
-                <option value="3">Design and Creative</option>
-              </select>
-            </div>
-            <div class="position-relative">
-              <img
-                class="employee-search-icon search-icons"
-                src="./asserts/search-employee.png"
-                alt=""
-              />
-              <button
-                class="btn bg-secondary-color text-white btn-employee-search form-control py-4 ps-3 pe-5 form-text"
-              >
-                Search
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-      <!-- form send-->
 
-      <!-- table start -->
+      <!-- edit-employee-details start -->
       <section class="px-3 px-lg-5 my-5">
-        <div class="rounded-2 table-containers">
-          <div class="d-flex justify-content-end gap-2 pt-2 pb-4 pe-4">
-            <button
-              type="button"
-              class="btn bg-secondary-color rounded-3 text-white btn-import-details"
-              style="
-                --bs-btn-padding-y: 0.25rem;
-                --bs-btn-padding-x: 0.5rem;
-                --bs-btn-font-size: 0.75rem;
-              "
-            >
-              Import Details
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary rounded-3 btn-export-details"
-              style="
-                --bs-btn-padding-y: 0.25rem;
-                --bs-btn-padding-x: 0.5rem;
-                --bs-btn-font-size: 0.75rem;
-              "
-            >
-              Export Details
-            </button>
+        <div class="rounded-2 bg-white p-3 p-md-5">
+          <!-- profiles start -->
+          <div>
+            <div class="employee-profile">
+              <div class="border rounded-4 change-photo">
+                <img
+                  class="rounded-circle employee-profile-img"
+                  src="./asserts/employeProfileEditImage.png"
+                  alt=""
+                />
+                <span class="text-black fw-medium px-3">Change photo</span>
+                <img src="./asserts/editIcon.png" alt="" />
+              </div>
+              <div class="my-3">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control rounded-5 input-text-name border-fields"
+                    value="Shahriar Ahmed"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control rounded-5 input-designation border-fields"
+                    value="Software Engineer "
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="table-responsive table-responsive-md table-responsive-sm">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th class="tabel-th" scope="col">
-                    <input
-                      class="form-check-input table-check"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-4" for="flexCheckDefault">
-                      Employee ID
-                    </label>
-                  </th>
-                  <th class="tabel-th" scope="col">Employee Name</th>
-                  <th class="tabel-th" scope="col">Designation</th>
-                  <th class="tabel-th" scope="col">Department</th>
-                  <th class="tabel-th" scope="col">Contact Number</th>
-                  <th class="tabel-th" scope="col">Email Address</th>
 
-                  <th class="tabel-th" scope="col">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="table-text ps-md-4 ps-lg-5" scope="row">
-                    NGILHR06
-                  </th>
-                  <td class="table-text">Shariar Ahmed</td>
-                  <td class="table-text">Sofware Engineer</td>
-                  <td class="table-text">Adminstration</td>
-
-                  <td class="table-text text-center">01714939393</td>
-                  <td class="table-text">example@email.com</td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <a href="/Employee-Details.html">
-                        <button
-                          type="button"
-                          class="btn bg-color text-white rounded-3 btn-table-view"
-                          style="
-                            --bs-btn-padding-y: 0.25rem;
-                            --bs-btn-padding-x: 0.5rem;
-                            --bs-btn-font-size: 0.75rem;
-                          "
-                        >
-                          View Details
-                        </button>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="table-text ps-md-4 ps-lg-5" scope="row">
-                    NGILHR06
-                  </th>
-                  <td class="table-text">Shariar Ahmed</td>
-                  <td class="table-text">Sofware Engineer</td>
-                  <td class="table-text">Adminstration</td>
-
-                  <td class="table-text text-center">01714939393</td>
-                  <td class="table-text">example@email.com</td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <a href="/Employee-Details.html">
-                        <button
-                          type="button"
-                          class="btn bg-color text-white rounded-3 btn-table-view"
-                          style="
-                            --bs-btn-padding-y: 0.25rem;
-                            --bs-btn-padding-x: 0.5rem;
-                            --bs-btn-font-size: 0.75rem;
-                          "
-                        >
-                          View Details
-                        </button>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="table-text ps-md-4 ps-lg-5" scope="row">
-                    NGILHR06
-                  </th>
-                  <td class="table-text">Shariar Ahmed</td>
-                  <td class="table-text">Sofware Engineer</td>
-                  <td class="table-text">Adminstration</td>
-
-                  <td class="table-text text-center">01714939393</td>
-                  <td class="table-text">example@email.com</td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <a href="/Employee-Details.html">
-                        <button
-                          type="button"
-                          class="btn bg-color text-white rounded-3 btn-table-view"
-                          style="
-                            --bs-btn-padding-y: 0.25rem;
-                            --bs-btn-padding-x: 0.5rem;
-                            --bs-btn-font-size: 0.75rem;
-                          "
-                        >
-                          View Details
-                        </button>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="table-text ps-md-4 ps-lg-5" scope="row">
-                    NGILHR06
-                  </th>
-                  <td class="table-text">Shariar Ahmed</td>
-                  <td class="table-text">Sofware Engineer</td>
-                  <td class="table-text">Adminstration</td>
-
-                  <td class="table-text text-center">01714939393</td>
-                  <td class="table-text">example@email.com</td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <a href="/Employee-Details.html">
-                        <button
-                          type="button"
-                          class="btn bg-color text-white rounded-3 btn-table-view"
-                          style="
-                            --bs-btn-padding-y: 0.25rem;
-                            --bs-btn-padding-x: 0.5rem;
-                            --bs-btn-font-size: 0.75rem;
-                          "
-                        >
-                          View Details
-                        </button>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="table-text ps-md-4 ps-lg-5" scope="row">
-                    NGILHR06
-                  </th>
-                  <td class="table-text">Shariar Ahmed</td>
-                  <td class="table-text">Sofware Engineer</td>
-                  <td class="table-text">Adminstration</td>
-
-                  <td class="table-text text-center">01714939393</td>
-                  <td class="table-text">example@email.com</td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <a href="/Employee-Details.html">
-                        <button
-                          type="button"
-                          class="btn bg-color text-white rounded-3 btn-table-view"
-                          style="
-                            --bs-btn-padding-y: 0.25rem;
-                            --bs-btn-padding-x: 0.5rem;
-                            --bs-btn-font-size: 0.75rem;
-                          "
-                        >
-                          View Details
-                        </button>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="table-text ps-md-4 ps-lg-5" scope="row">
-                    NGILHR06
-                  </th>
-                  <td class="table-text">Shariar Ahmed</td>
-                  <td class="table-text">Sofware Engineer</td>
-                  <td class="table-text">Adminstration</td>
-
-                  <td class="table-text text-center">01714939393</td>
-                  <td class="table-text">example@email.com</td>
-                  <td class="table-text">
-                    <div class="ms-3">
-                      <a href="/Employee-Details.html">
-                        <button
-                          type="button"
-                          class="btn bg-color text-white rounded-3 btn-table-view"
-                          style="
-                            --bs-btn-padding-y: 0.25rem;
-                            --bs-btn-padding-x: 0.5rem;
-                            --bs-btn-font-size: 0.75rem;
-                          "
-                        >
-                          View Details
-                        </button>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="employee-info d-flex justify-content-between">
+            <div>
+              <p class="employee-info-text fs-6 mb-3 fw-medium">
+                Employee ID: NG001
+              </p>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control rounded-5 text-black fw-medium border-fields input-field"
+                  value="Deartment: Creative"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control rounded-5 text-black fw-medium border-fields input-field"
+                  value="Reporting To: Shumon Khan"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control rounded-5 border-fields input-field"
+                  value="Joining date: 15 Dec, 2022 "
+                />
+              </div>
+            </div>
+            <div>
+              <div class="text-input-field mb-3">
+                <div class="input-color-text">
+                  <label>Mobile No:</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control rounded-5 fs-6 border-fields input-color-text input-field input-field"
+                    value="01744668826"
+                  />
+                </div>
+              </div>
+              <div class="text-input-field mb-3">
+                <div class="input-color-text">
+                  <label>E-mail: </label>
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    class="form-control rounded-5 fs-6 border-fields input-color-text input-field"
+                    value="name@example.com"
+                  />
+                </div>
+              </div>
+              <div class="text-input-field mb-3">
+                <div class="input-color-text">
+                  <label>Birthday:</label>
+                </div>
+                <div>
+                  <input
+                    type="date"
+                    class="form-control rounded-5 w-100 fs-6 border-fields input-color-text input-field"
+                  />
+                </div>
+              </div>
+              <div class="text-input-field mb-3">
+                <div class="input-color-text">
+                  <label>Address: </label>
+                </div>
+                <div>
+                  <textarea
+                    type="date"
+                    class="form-control rounded-4 w-100 fs-6 border-fields input-color-text input-field"
+                  >
+123, Summit Villa, Banani</textarea
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- pagination -->
-        <div>
-          <nav aria-label="Page navigation example">
-            <ul
-              class="pagination d-flex justify-content-end me-5 pagination-container"
-            >
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number"
-                  href="#"
-                  aria-label="Previous"
-                >
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number pagination-number-bg-color"
-                  href="#"
-                  >1</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number"
-                  href="#"
-                  >2</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number"
-                  href="#"
-                  >3</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number"
-                  href="#"
-                  >4</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number"
-                  href="#"
-                  >5</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link border-0 text-black pagination-number"
-                  href="#"
-                  aria-label="Next"
-                >
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div>
+            <hr class="employee-divided" />
+          </div>
+
+          <!-- Personal Information -->
+          <div class="employee-info d-flex justify-content-between">
+            <div>
+              <h4 class="info-titel fs-4">Personal Information</h4>
+              <div class="text-input-field mb-3">
+                <div class="input-color-text">
+                  <label>NID Numer:</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control rounded-5 fs-6 border-fields input-color-text input-field"
+                    value="555 999 666"
+                  />
+                </div>
+              </div>
+              <div class="text-input-field mb-3">
+                <div class="input-color-text">
+                  <label>Nationality: </label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control input-field rounded-5 fs-6 border-fields input-color-text"
+                    value="Bangladeshi"
+                  />
+                </div>
+              </div>
+              <div class="text-input-field mb-3">
+                <div class="input-color-text">
+                  <label>Marital Status: </label>
+                </div>
+                <div>
+                  <select
+                    class="form-select input-field rounded-5 w-100 border-fields input-color-text"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Unmarried</option>
+                    <option value="1">married</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="text-input-field mb-3">
+                <div class="input-color-text">
+                  <label>Religion:</label>
+                </div>
+                <div>
+                  <select
+                    class="form-select input-field rounded-5 w-100 border-fields input-color-text"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Islam</option>
+                    <option value="1">Hindu</option>
+                    <option value="2">Others</option>
+                  </select>
+                </div>
+              </div>
+              <div class="text-input-field mb-3">
+                <div class="input-color-text">
+                  <label>Blood Group:</label>
+                </div>
+                <div>
+                  <select
+                    class="form-select input-field rounded-5 w-100 border-fields input-color-text"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>O+</option>
+                    <option value="1">B+</option>
+                    <option value="2">A+</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4 class="info-titel fs-4">Emergency Contact</h4>
+              <div class="text-input-field mb-3">
+                <div class="input-color-text">
+                  <label>Name:</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control rounded-5 fs-6 border-fields input-color-text input-field"
+                    value="Mithul Ahmed"
+                  />
+                </div>
+              </div>
+              <div class="text-input-field mb-3">
+                <div class="input-color-text">
+                  <label>Mobile No:</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control rounded-5 fs-6 border-fields input-color-text input-field"
+                    value="01744666688"
+                  />
+                </div>
+              </div>
+              <div class="text-input-field mb-3">
+                <div class="input-color-text">
+                  <label>Relationship:</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control rounded-5 fs-6 border-fields input-color-text input-field"
+                    value="Brother"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-lg-flex gap-4 mb-5">
+            <div class="mb-3 mb-md-0">
+              <button class="btn btn-download bg-color text-white w-100">
+                Update Details
+              </button>
+            </div>
+            <div>
+              <button class="btn btn-cancel text-white w-100">Cancel</button>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- table end -->
-      <!-- modal add employee start -->
-
-      <div
-        class="modal fade"
-        id="addEmployeeModal"
-        tabindex="-1"
-        aria-labelledby="addEmployeeModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">...</div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- modal add employee end -->
+      <!-- edit-employee-details end -->
     </main>
     <footer></footer>
     <!-- bootstrap js link -->

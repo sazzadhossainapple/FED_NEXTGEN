@@ -665,7 +665,9 @@
             aria-labelledby="exampleModalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog modal-dialog-scrollable">
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-width"
+            >
               <div class="modal-content">
                 <div class="modal-header">
                   <h1
@@ -713,38 +715,32 @@
                   </div>
 
                   <div class="modal-grid-date">
-                    <div>
-                      <div class="position-relative">
-                        <span class="date-from">From:</span>
-                        <input
-                          type="date"
-                          class="form-control date-calender-input pe-3 py-4 form-text"
-                          name=""
-                          id=""
-                        />
-                      </div>
+                    <div class="position-relative">
+                      <span class="date-from">From:</span>
+                      <input
+                        type="date"
+                        class="form-control date-calender-input pe-3 py-4 form-text"
+                        name=""
+                        id=""
+                      />
+                    </div>
+
+                    <div class="position-relative">
+                      <span class="date-from">To:</span>
+                      <input
+                        type="date"
+                        class="form-control date-calender-input pe-3 py-4 form-text"
+                        name=""
+                        id=""
+                      />
                     </div>
 
                     <div>
-                      <div class="position-relative">
-                        <span class="date-from">To:</span>
-                        <input
-                          type="date"
-                          class="form-control date-calender-input pe-3 py-4 form-text"
-                          name=""
-                          id=""
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <div>
-                        <button
-                          class="btn btn-download btn-modal-download text-white"
-                        >
-                          Download Report
-                        </button>
-                      </div>
+                      <button
+                        class="btn btn-download btn-modal-download text-white"
+                      >
+                        Download Report
+                      </button>
                     </div>
                   </div>
                   <div class="attendance-day">
