@@ -774,64 +774,104 @@
             </div>
             <div class="modal-body">
               <!-- modal form start -->
-              <form>
+              <form class="px-md-3">
                 <div>
                   <div class="employee-profile">
-                    <div class="border rounded-4 change-photo">
-                      <img
-                        class="rounded-circle employee-profile-img"
-                        src="./asserts/employeProfileEditImage.png"
-                        alt=""
+                    <div
+                      class="border d-flex justify-content-around align-items-center rounded-4 change-photo"
+                    >
+                      <div class="employee-profile-img">
+                        <img src="./asserts/addEmployeeImageIcon.png" alt="" />
+                      </div>
+
+                      <input
+                        type="file"
+                        accept="image/*"
+                        name="image"
+                        id="imgUpload"
                       />
-                      <span class="text-black fw-medium px-3"
-                        >Change photo</span
-                      >
-                      <img src="./asserts/editIcon.png" alt="" />
-                    </div>
-                    <div class="my-3">
-                      <div class="mb-3">
-                        <input
-                          type="text"
-                          class="form-control rounded-5 input-text-name border-fields"
-                          value="Shahriar Ahmed"
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <input
-                          type="text"
-                          class="form-control rounded-5 input-designation border-fields"
-                          value="Software Engineer "
-                        />
-                      </div>
+                      <label for="imgUpload">
+                        <span class="text-black fw-medium px-3"
+                          >Upload photo</span
+                        >
+                        <img src="./asserts/imageUploadIcon.png" alt="" />
+                      </label>
                     </div>
                   </div>
                 </div>
 
                 <div class="employee-info d-flex justify-content-between">
                   <div>
-                    <p class="employee-info-text fs-6 mb-3 fw-medium">
-                      Employee ID: NG001
-                    </p>
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control rounded-5 text-black fw-medium border-fields input-field"
-                        value="Deartment: Creative"
-                      />
+                    <div class="text-input-field mb-3">
+                      <div class="input-color-text">
+                        <label>Name:</label>
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          class="form-control rounded-5 fs-6 border-fields input-color-text input-field input-field"
+                          value=""
+                          name=""
+                          required
+                        />
+                      </div>
                     </div>
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control rounded-5 text-black fw-medium border-fields input-field"
-                        value="Reporting To: Shumon Khan"
-                      />
+                    <div class="text-input-field mb-3">
+                      <div class="input-color-text">
+                        <label>Designation:</label>
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          class="form-control rounded-5 fs-6 border-fields input-color-text input-field input-field"
+                          value=""
+                          name=""
+                          required
+                        />
+                      </div>
                     </div>
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control rounded-5 border-fields input-field"
-                        value="Joining date: 15 Dec, 2022 "
-                      />
+                    <div class="text-input-field mb-3">
+                      <div class="input-color-text">
+                        <label>Department:</label>
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          class="form-control rounded-5 fs-6 border-fields input-color-text input-field input-field"
+                          value=""
+                          name=""
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="text-input-field mb-3">
+                      <div class="input-color-text">
+                        <label>Reporting To: </label>
+                      </div>
+                      <div>
+                        <select
+                          name=""
+                          class="form-select input-field rounded-5 w-100 border-fields input-color-text"
+                          aria-label=".form-select-sm example"
+                        >
+                          <option value="1">HR and Admin</option>
+                          <option value="2">IT</option>
+                          <option value="3">Design and Creative</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="text-input-field mb-3">
+                      <div class="input-color-text">
+                        <label>Joining Date:</label>
+                      </div>
+                      <div>
+                        <input
+                          type="date"
+                          class="form-control rounded-5 w-100 fs-6 border-fields input-color-text input-field"
+                          name=""
+                          required
+                        />
+                      </div>
                     </div>
                   </div>
                   <div>
@@ -843,7 +883,9 @@
                         <input
                           type="text"
                           class="form-control rounded-5 fs-6 border-fields input-color-text input-field input-field"
-                          value="01744668826"
+                          value=""
+                          required
+                          name=""
                         />
                       </div>
                     </div>
@@ -855,7 +897,9 @@
                         <input
                           type="email"
                           class="form-control rounded-5 fs-6 border-fields input-color-text input-field"
-                          value="name@example.com"
+                          value=""
+                          required
+                          name=""
                         />
                       </div>
                     </div>
@@ -876,11 +920,12 @@
                       </div>
                       <div>
                         <textarea
+                          required
+                          name=""
                           type="date"
                           class="form-control rounded-4 w-100 fs-6 border-fields input-color-text input-field"
                         >
-      123, Summit Villa, Banani</textarea
-                        >
+                        </textarea>
                       </div>
                     </div>
                   </div>
@@ -901,7 +946,9 @@
                         <input
                           type="text"
                           class="form-control rounded-5 fs-6 border-fields input-color-text input-field"
-                          value="555 999 666"
+                          value=""
+                          required
+                          name=""
                         />
                       </div>
                     </div>
@@ -913,7 +960,9 @@
                         <input
                           type="text"
                           class="form-control input-field rounded-5 fs-6 border-fields input-color-text"
-                          value="Bangladeshi"
+                          value=""
+                          required
+                          name=""
                         />
                       </div>
                     </div>
@@ -923,10 +972,11 @@
                       </div>
                       <div>
                         <select
+                          name=""
                           class="form-select input-field rounded-5 w-100 border-fields input-color-text"
                           aria-label=".form-select-sm example"
                         >
-                          <option selected>Unmarried</option>
+                          <option>Unmarried</option>
                           <option value="1">married</option>
                           <option value="2">Two</option>
                           <option value="3">Three</option>
@@ -939,10 +989,11 @@
                       </div>
                       <div>
                         <select
+                          name=""
                           class="form-select input-field rounded-5 w-100 border-fields input-color-text"
                           aria-label=".form-select-sm example"
                         >
-                          <option selected>Islam</option>
+                          <option>Islam</option>
                           <option value="1">Hindu</option>
                           <option value="2">Others</option>
                         </select>
@@ -954,10 +1005,11 @@
                       </div>
                       <div>
                         <select
+                          name=""
                           class="form-select input-field rounded-5 w-100 border-fields input-color-text"
                           aria-label=".form-select-sm example"
                         >
-                          <option selected>O+</option>
+                          <option>O+</option>
                           <option value="1">B+</option>
                           <option value="2">A+</option>
                         </select>
@@ -974,7 +1026,9 @@
                         <input
                           type="text"
                           class="form-control rounded-5 fs-6 border-fields input-color-text input-field"
-                          value="Mithul Ahmed"
+                          value=""
+                          required
+                          name=""
                         />
                       </div>
                     </div>
@@ -986,7 +1040,9 @@
                         <input
                           type="text"
                           class="form-control rounded-5 fs-6 border-fields input-color-text input-field"
-                          value="01744666688"
+                          value=""
+                          required
+                          name=""
                         />
                       </div>
                     </div>
@@ -998,39 +1054,26 @@
                         <input
                           type="text"
                           class="form-control rounded-5 fs-6 border-fields input-color-text input-field"
-                          value="Brother"
+                          value=""
+                          required
+                          name=""
                         />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="d-lg-flex gap-4 mb-5">
-                  <div class="mb-3 mb-md-0">
-                    <button class="btn btn-download bg-color text-white w-100">
-                      Update Details
-                    </button>
-                  </div>
-                  <div>
-                    <button class="btn btn-cancel text-white w-100">
-                      Cancel
+                <div>
+                  <div class="mb-3 mb-md-5">
+                    <button
+                      class="btn btn-download bg-color text-white w-sm-100"
+                    >
+                      Add Employee
                     </button>
                   </div>
                 </div>
               </form>
 
               <!-- modal form end -->
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
             </div>
           </div>
         </div>

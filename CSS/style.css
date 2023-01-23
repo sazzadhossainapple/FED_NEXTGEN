@@ -433,8 +433,7 @@
 /* add employee modal page */
 
 .add-employee-modal-dialog {
-  width: 950px !important;
-  margin-left: auto !important;
+  max-width: 850px !important;
 }
 
 /*===== employees-details page =====*/
@@ -451,10 +450,9 @@
 .employee-profile .employee-profile-img {
   display: flex;
   justify-content: center;
-  width: 105px;
-  height: 105px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  border: 8px solid #c6eae9;
 }
 
 .employee-profile h3 {
@@ -499,6 +497,7 @@
 /*===== edit employees-details page =====*/
 .change-photo {
   width: 350px;
+  padding: 17px;
 }
 #imgUpload {
   display: none;
@@ -684,5 +683,13 @@
   .text-input-field {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  /* add employee */
+  .add-employee-modal-dialog {
+    max-width: 100% !important;
+  }
+  .change-photo {
+    width: 100% !important;
   }
 }
